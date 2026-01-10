@@ -23,7 +23,7 @@ class AddNoteButtomSheet extends StatelessWidget {
           return AbsorbPointer(
             absorbing: state is AddNoteLoading ? true : false,
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
+              padding: const EdgeInsets.only(left: 16, right: 16),
               child: SingleChildScrollView(child: AddNoteForm()),
             ),
           );
